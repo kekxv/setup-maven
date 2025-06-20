@@ -32,7 +32,7 @@ export async function getMaven(version: string, mirror: string) {
 }
 
 function get_server_url(mirror: string) {
-  if (mirror && mirror.indexOf("http") == 0) {
+  if (mirror && (mirror.indexOf("http") === 0)) {
     return mirror;
   }
   switch (mirror) {

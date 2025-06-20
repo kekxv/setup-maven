@@ -46,7 +46,7 @@ function get_server_url(url: string) {
 
 async function downloadMaven(version: string, url: string): Promise<string> {
   const toolDirectoryName = `apache-maven-${version}`;
-  const downloadUrl = `${get_server_url(url)}/maven2/org/apache/maven/apache-maven/${version}/apache-maven-${version}-bin.tar.gz`;
+  const downloadUrl = `${get_server_url(url)}/org/apache/maven/apache-maven/${version}/apache-maven-${version}-bin.tar.gz`;
   console.log(`downloading ${downloadUrl}`);
 
   try {
